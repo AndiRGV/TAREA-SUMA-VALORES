@@ -1,0 +1,27 @@
+package jv.argv.suma;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class sumaDeValores {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Ingrese a lista sus valores");
+		ArrayList<Integer>listaNumeros = new ArrayList<>();
+
+		  for (int i = 0; i <= 5; i++) {
+			  int numero = teclado.nextInt();
+			  listaNumeros.add(numero);
+		  }
+
+		  int suma = 0;
+	        for (int numero : listaNumeros) {
+	            suma += numero;
+	        }
+
+	        System.out.println("La suma de los numeros ingresados a la lista es: " + suma);
+	        		
+	    }
+
+	}
